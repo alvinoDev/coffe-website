@@ -117,14 +117,14 @@ button {
 	padding: 4.5rem 0 2rem;
 }
 
-.section__title {
+.section_title {
 	position: relative;
 	font-size: var(--h1-font-size);
 	padding-left: 1.25rem;
 	margin-bottom: 2.5rem;
 }
 
-.section__title::before {
+.section_title::before {
 	content: '';
 	position: absolute;
 	top: 8px;
@@ -135,6 +135,28 @@ button {
 }
 
 /* ===================== BUTTONS ===================== */
+.button {
+	display: inline-block;
+	background-color: var(--black-color);
+	color: #fff;
+	padding: 1rem 1.75rem;
+	font-size: var(--normal-font-size);
+	text-transform: uppercase;
+	border-radius: .25rem;
+	-webkit-border-radius: .25rem;
+	-moz-border-radius: .25rem;
+	-ms-border-radius: .25rem;
+	-o-border-radius: .25rem;
+}
+
+.button:hover {
+	background-color: var(--first-color);
+	transition: background-color .4s;
+	-webkit-transition: background-color .4s;
+	-moz-transition: background-color .4s;
+	-ms-transition: background-color .4s;
+	-o-transition: background-color .4s;
+}
 
 /* ===================== HEADER ===================== */
 .header {
@@ -340,6 +362,48 @@ button {
 }
 
 /* ==================== SPECIALTY =================== */
+.specialty_button {
+	margin-left: 1.25rem;
+}
+
+.specialty_category {
+	margin-top: 4rem;
+	display: grid;
+	grid-template-columns: 200px;
+	justify-content: center;
+	row-gap: 2.5rem;
+}
+
+.specialty_img {
+	width: 60px;
+	margin-bottom: 1rem;
+	transition: .4s;
+	-webkit-transition: .4s;
+	-moz-transition: .4s;
+	-ms-transition: .4s;
+	-o-transition: .4s;
+}
+
+.specialty_group {
+	text-align: center;
+}
+
+.specialty_title {
+	font-size: var(--h2-font-size);
+	margin-bottom: .25rem;
+}
+
+.specialty_group:hover .specialty_img {
+	transform: translateY(-.25rem);
+	-webkit-transform: translateY(-.25rem);
+	-moz-transform: translateY(-.25rem);
+	-ms-transform: translateY(-.25rem);
+	-o-transform: translateY(-.25rem);
+}
+
+
+
+
 
 /* ==================== PRODUCTS ==================== */
 /* Swiper Class */
