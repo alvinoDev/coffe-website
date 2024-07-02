@@ -13,22 +13,28 @@ if (navToggle) {
 }
 // HIDDEN MENU
 if (navClose) {
-    navClose.addEventListener('click', () => {
-        navMenu.classList.remove('show_menu');
+	navClose.addEventListener('click', () => {
+		navMenu.classList.remove('show_menu');
 	});
 }
 
 // REMOVE MENU MOBILE
-const navLink =document.querySelectorAll('.nav_link');
+const navLink = document.querySelectorAll('.nav_link');
 
-function linkAction () {
-    const navMenu = document.getElementById('nav_menu');
-    navMenu.classList.remove('show_menu');
+function linkAction() {
+	const navMenu = document.getElementById('nav_menu');
+	navMenu.classList.remove('show_menu');
 }
-navLink.forEach(n => n.addEventListener('click', linkAction));
-
+navLink.forEach((n) => n.addEventListener('click', linkAction));
 
 // CHANGE BACKGROUND HEADER
+function scrollHeader() {
+	const header = document.getElementById('header');
+	if (this.scrollY >= 50) header.classList.add('scroll_header');
+	else header.classList.remove('scroll_header');
+}
+
+window.addEventListener('scroll', scrollHeader);
 
 // SWIPER
 
