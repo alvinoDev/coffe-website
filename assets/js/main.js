@@ -41,11 +41,26 @@ window.addEventListener('scroll', scrollHeader);
 /* ====================== MAIN ====================== */
 
 // MIXITUP FILTER PRODUCTS
+let mixerProducts = mixitup('.products_content', {
+	selectors: {
+		target: '.products_card',
+	},
+	animation: {
+		duration: 300,
+	},
+});
 
 // Default filter products
+mixerProducts.filter('.delicacies');
 
 // Link active products
+linkProducts = document.querySelectorAll('.products_item');
 
+function activeProducts() {
+	linkProducts.forEach(l => l.classList.remove('active_product'));
+	this.classList.add('active_product');
+}
+linkProducts.forEach(l => l.addEventListener('click', activeProducts))
 /* ================= SCROLL ACTIONS ================= */
 
 // SHOW SCROLL UP

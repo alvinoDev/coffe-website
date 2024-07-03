@@ -509,6 +509,11 @@ button {
 	-o-transform: translateY(-.25rem);
 }
 
+/* Active link products */
+.active_product .products_title {
+	color: var(--title-color);
+}
+
 /* Swiper Class */
 
 /* ===================== QUALITY ==================== */
