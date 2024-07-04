@@ -637,8 +637,96 @@ button {
 .logo_img:hover {
 	opacity: .8;
 }
-/* ====================== BLOG ====================== */
 
+/* ====================== BLOG ====================== */
+.blog_container {
+	padding-bottom: 2rem;
+}
+
+.blog_content {
+	row-gap: 3rem;
+}
+
+.blog_image {
+	position: relative;
+	margin-bottom: 1.5rem;
+}
+
+.blog_img {
+	border-radius: .5rem;
+	-webkit-border-radius: .5rem;
+	-moz-border-radius: .5rem;
+	-ms-border-radius: .5rem;
+	-o-border-radius: .5rem;
+}
+
+.blog_button {
+	display: inline-flex;
+	background-color: #fff;
+	padding: .7rem;
+	border-radius: .5rem 0 .5rem 0;
+	-webkit-border-radius: .5rem 0 .5rem 0;
+	-moz-border-radius: .5rem 0 .5rem 0;
+	-ms-border-radius: .5rem 0 .5rem 0;
+	-o-border-radius: .5rem 0 .5rem 0;
+	font-size: 1.5rem;
+	color: var(--title-color);
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.blog_button i {
+	transform: rotate(-30deg);
+	-webkit-transform: rotate(-30deg);
+	-moz-transform: rotate(-30deg);
+	-ms-transform: rotate(-30deg);
+	-o-transform: rotate(-30deg);
+	transition: .4s;
+	-webkit-transition: .4s;
+	-moz-transition: .4s;
+	-ms-transition: .4s;
+	-o-transition: .4s;
+}
+
+.blog_button:hover i {
+	transform: rotate(-30deg) translateX(.25rem);
+	-webkit-transform: rotate(-30deg) translateX(.25rem);
+	-moz-transform: rotate(-30deg) translateX(.25rem);
+	-ms-transform: rotate(-30deg) translateX(.25rem);
+	-o-transform: rotate(-30deg) translateX(.25rem);
+}
+
+.blog_title {
+	font-size: var(--h2-font-size);
+	margin-bottom: .75rem;
+}
+
+.blog_description {
+	margin-bottom: 1.5rem;
+}
+
+.blog_footer,
+.blog_reaction {
+	display: flex;
+	align-items: center;
+}
+
+.blog_footer {
+	column-gap: 1.5rem;
+}
+
+.blog_reaction {
+	column-gap: .25rem;
+}
+
+.blog_reaction i {
+	font-size: 1rem;
+}
+
+.blog_reaction span {
+	font-size: var(--smaller-font-size);
+}
 /* ===================== FOOTER ===================== */
 
 /* =================== SCROLL BAR =================== */
