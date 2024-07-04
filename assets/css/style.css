@@ -727,8 +727,121 @@ button {
 .blog_reaction span {
 	font-size: var(--smaller-font-size);
 }
-/* ===================== FOOTER ===================== */
 
+/* ===================== FOOTER ===================== */
+.footer {
+	background-color: var(--black-color);
+	padding: 4rem 0 2.5rem;
+}
+
+.footer_title {
+	color: #fff;
+	font-size: var(--h1-font-size);
+	margin-bottom: 2rem;
+}
+
+.footer_description {
+	margin-bottom: .75rem;
+}
+
+.footer_newsletter {
+	display: flex;
+	column-gap: .5rem;
+}
+
+.footer_input {
+	border: none;
+	outline: none;
+	padding: 1.25rem 1rem;
+	border-radius: .25rem;
+	-webkit-border-radius: .25rem;
+	-moz-border-radius: .25rem;
+	-ms-border-radius: .25rem;
+	-o-border-radius: .25rem;
+	width: 70%;
+	color: var(--text-color);
+}
+
+.footer_button {
+	padding: 0.75rem;
+	font-size: 2rem;
+	display: inline-flex;
+	background-color: var(--first-color);
+	border-radius: .25rem;
+	-webkit-border-radius: .25rem;
+	-moz-border-radius: .25rem;
+	-ms-border-radius: .25rem;
+	-o-border-radius: .25rem;
+}
+
+.footer_button i {
+	transform: rotate(-30deg);
+	-webkit-transform: rotate(-30deg);
+	-moz-transform: rotate(-30deg);
+	-ms-transform: rotate(-30deg);
+	-o-transform: rotate(-30deg);
+	transition: .4s;
+	-webkit-transition: .4s;
+	-moz-transition: .4s;
+	-ms-transition: .4s;
+	-o-transition: .4s;
+}
+
+.footer_button:hover i {
+	transform: rotate(-30deg) translate(.25rem);
+	-webkit-transform: rotate(-30deg) translate(.25rem);
+	-moz-transform: rotate(-30deg) translate(.25rem);
+	-ms-transform: rotate(-30deg) translate(.25rem);
+	-o-transform: rotate(-30deg) translate(.25rem);
+}
+
+.footer_content {
+	row-gap: 2.5rem;
+	padding-bottom: 2.5rem;
+	border-bottom: 1px solid var(--text-color);
+}
+
+.footer_subtitle {
+	color: #fff;
+	font-size: var(--h2-font-size);
+	margin-bottom: .75rem;
+}
+
+.footer_img_flag {
+	width: 1rem;
+}
+
+.footer_group {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 1.5rem;
+}
+
+.footer_social {
+	display: flex;
+	justify-content: center;
+	column-gap: 1.5rem;
+	font-size: 1.25rem;
+	margin-bottom: 2rem;
+}
+
+.footer_social_link {
+	color: #fff;
+	transition: .4s;
+	-webkit-transition: .4s;
+	-moz-transition: .4s;
+	-ms-transition: .4s;
+	-o-transition: .4s;
+}
+
+.footer_social_link:hover {
+	color: var(--first-color);
+}
+
+.footer_copy {
+	font-size: var(--smaller-font-size);
+}
 /* =================== SCROLL BAR =================== */
 
 /* ==================== SCROLL UP =================== */
