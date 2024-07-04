@@ -36,8 +36,6 @@ function scrollHeader() {
 
 window.addEventListener('scroll', scrollHeader);
 
-// SWIPER
-
 /* ====================== MAIN ====================== */
 
 // MIXITUP FILTER PRODUCTS

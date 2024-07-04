@@ -514,10 +514,100 @@ button {
 	color: var(--title-color);
 }
 
-/* Swiper Class */
-
 /* ===================== QUALITY ==================== */
+.quality {
+	background-color: #fff;
+}
 
+.quality_content {
+	row-gap: 2.5rem;
+}
+
+.quality_images {
+	position: relative;
+	justify-self: center;
+}
+
+.quality_img_big,
+.quality_img_small {
+	border-radius: .5rem;
+	-webkit-border-radius: .5rem;
+	-moz-border-radius: .5rem;
+	-ms-border-radius: .5rem;
+	-o-border-radius: .5rem;
+}
+
+.quality_img_big {
+	width: 280px;
+}
+
+.quality_img_small {
+	width: 100px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	transform: translateX(-5rem);
+	-webkit-transform: translateX(-5rem);
+	-moz-transform: translateX(-5rem);
+	-ms-transform: translateX(-5rem);
+	-o-transform: translateX(-5rem);
+}
+
+.quality_title,
+.quality_price {
+	font-size: var(--h1-font-size);
+}
+
+.quality_title {
+	margin-bottom: .75rem;
+}
+
+.quality_price {
+	margin-bottom: .25rem;
+}
+
+.quality_special {
+	display: block;
+	font-size: var(--small-font-size);
+	margin-bottom: .75rem;
+}
+
+.quality_description {
+	margin-bottom: 2.5rem;
+}
+
+.quality_buttons {
+	display: flex;
+	align-items: center;
+	column-gap: 2rem;
+}
+
+.quality_button {
+	font-size: var(--normal-font-size);
+	text-transform: uppercase;
+	color: var(--title-color);
+	display: inline-flex;
+	align-items: center;
+	column-gap: .75rem;
+}
+
+.quality_button i {
+	font-size: 1.25rem;
+	transition: .4s;
+	-webkit-transition: .4s;
+	-moz-transition: .4s;
+	-ms-transition: .4s;
+	-o-transition: .4s;
+}
+
+.quality_button:hover i {
+	transform: translateX(.25rem);
+	-webkit-transform: translateX(.25rem);
+	-moz-transform: translateX(.25rem);
+	-ms-transform: translateX(.25rem);
+	-o-transform: translateX(.25rem);
+}
 /* ===================== SPONSOR ==================== */
 
 /* ====================== BLOG ====================== */
