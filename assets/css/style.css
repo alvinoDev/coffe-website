@@ -267,6 +267,9 @@ button {
 }
 
 /* Active Link */
+.active_link {
+	color: #fff;
+}
 
 /* ====================== HOME ====================== */
 .home {
