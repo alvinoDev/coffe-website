@@ -1,6 +1,12 @@
 /* ===================== HEADER ===================== */
 
 // LOADER
+onload = () => {
+	const load = document.getElementById('load');
+	setTimeout(() => {
+		load.style.display = 'none';
+	}, 1500);
+}
 
 const navMenu = document.getElementById('nav_menu'),
 	navToggle = document.getElementById('nav_toogle'),
@@ -83,7 +89,7 @@ const scrollActive = () => {
 			sectionsClass = document.querySelector(
 				'.nav_menu a[href*=' + sectionId + ']',
 			);
-
+		
 		if (scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight) {
 			sectionsClass.classList.add('active_link');
 		} else {
