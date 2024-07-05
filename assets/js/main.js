@@ -59,9 +59,16 @@ function activeProducts() {
 	this.classList.add('active_product');
 }
 linkProducts.forEach(l => l.addEventListener('click', activeProducts))
+
 /* ================= SCROLL ACTIONS ================= */
 
 // SHOW SCROLL UP
+function scrollUp() {
+	const scrollUp = document.getElementById('scrollup');
+	if(this.scrollY >= 350) scrollUp.classList.add("show_scrollup");
+	else scrollUp.classList.remove("show_scrollup");
+}
+window.addEventListener('scroll', scrollUp);
 
 // SCROLL SECTIONS ACTIVE LINK
 
